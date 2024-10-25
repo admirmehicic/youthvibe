@@ -1,15 +1,54 @@
 # youthvibe
-Youthvibe predstavlja projekat grupe studenata treće godine studija Softverskog inžinjerstva, Politehničkog fakulteta Univerziteta u Zenica. Kroz ovaj projekat, kreirana je web aplikacija putem koje mladi mogu razmjenivati korisne informacije o prilikama za mlade u zajendnici.
+### Overview
+Youthvibe is a project by a group of third-year Software Engineering students from the Polytechnic Faculty at the University of Zenica. Through this project, a web application was created where young people can exchange useful information about opportunities for youth in the community. The project was implemented as a web application, accessible through any web browser. 
 
+## Features 
+* User registration: Users can enter their information into a form, and that data is inserted into the corresponding 'users' table in the database.
+* Admin login: With the login credentials admin/admin, the admin can view and manage all users from the database.
+* User login: After registering, users log in with their credentials.
+* News posting: Logged-in users are able to post news.
+* Logout: Logged-in users are provided with the option to log out and return to the homepage.
+* Viewing published opportunities: A controller is used for displaying this view, where data is fetched from the 'opportunities' table. After that, the retrieved data is forwarded to the next view. Thymeleaf technology was used to format the retrieved data appropriately.
+* Posting opportunities: Through a form, the user enters data related to opportunities for young people in the community (title, description, date, location), and this data is inserted into the 'news' table. After that, the data is saved to the database.
+* Viewing and posting news: Viewing published news is done similarly, based on the same principle.
 
-Projekat je implementiran kao web aplikacija kojoj se pristupa putem web browsera. U sklopu ovog projekta korištene su sljedeće tehnologije: HTML, CSS, Java programski jezik, Spring framework, Thymleaf te MySQL za bazu podataka. Aplikacija je pokrenuta na lokalnom hostu i omogućava korisniku sljedeće funkcionalnosti:
-1. pregled objavljenih prilika - za prikaz ovog view-a je korišten kontroler u kojem se dohvataju podaci iz tabele 'prilike'. Nakon toga se dohvaćeni podaci proslijeđuju prema idućem view-u. Za adekvatnog formatiranje dohvaćenih podataka, korištena je Thymeleaf tehnologija.
-2. postavljanje prilika - putem forme, korisnik unosi podatke koji se odnose na neke prilike za mlade iz zajednice (naslov, opis, datum, lokacija) te se vrši INSERT podataka u tabelu 'news'. Nakon toga se vrši unos podataka u bazu.
-3. pregled i postavljanje vijest - na istom principu se vrši pregled objavljenih vijesti.
+## Tech Stack
+* Frontend: HTML, CSS, Thymeleaf
+* Backend: Java, Spring Boot
+* Database: MySQL
+* API: RESTful services
+* Version Control: Git
 
-Funkcionalnosti registracije:
-1. postoji mogućnost registracije korisnika - unos podataka u formu te njihovo postavljanje u odgovarajuću tabelu 'korisnici' u bazi podataka
-2. admin prijava - sa pristupnim podacima admin/admin može se vršiti pregled i upravljanje svim korisnicima iz baze
-3. prijava korisnika - nakon registracije, korisnik se prijavljuje sa svojim korisničkim podacima
-4. prijavljenim korisnicima se omogućava postavljanje vijesti.
-5. prijavljenim korisnicima se pruža mogućnost odjave te povratak na povratak na početnu stranicu.
+## Installation
+### Prerequisites
+* Java JDK 11+
+* Maven
+* MySQL
+* XAMPP
+
+### Steps 
+1. Clone the respository:
+
+```git clone https://github.com/admirmehicic/youthvibe.git ```
+   
+```cd youthvibe```
+
+2. Configure the application.properties file to connect to your MySQL database:
+
+``` spring.datasource.url=jdbc:mysql://localhost:3305/youthvibe ```
+
+``` spring.datasource.username=root ```
+
+``` spring.datasource.password=admir ```
+
+3. Build the project:
+
+` mvn clean install `
+
+4. Run the application:
+
+`mvn spring-boot:run `
+
+5. Open the application:
+
+` localhost:8080 `
