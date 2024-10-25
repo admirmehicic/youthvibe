@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png">
+    <style>
+        #slika{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+        }
+
+        #container{
+            height: 50px;
+            float: right;
+            width: 850px;
+            margin: 30px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Kadwa  sans-serif;
+
+
+        }
+
+        .button {
+            flex: 1;
+            margin: 0 10px;
+            background-color: white;
+            border: 0px;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        .button:hover {
+            color: #0048ae;
+            transition: 0.5s;
+        }
+
+        #onama{
+            font-family: "Roboto Light", sans-serif;
+
+        }
+
+
+        .button1 {
+            flex: 1;
+            margin: 0 10px;
+            background-color: white;
+            color: black;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: "Roboto Light", sans-serif;
+            float: right;
+            transition: 0.2s;
+        }
+
+        .button1:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            margin: -1px;
+            transition: 0.2s;
+        }
+
+        #textContainer{
+            margin-top: 120px;
+            font-size: 22px;
+            margin-left: 100px;
+            width: 700px;
+            color: black;
+
+        }
+
+        #title{
+            font-size: 50px;
+            color:  #0048ae;
+            font-family: "Roboto Light", sans-serif;
+            font-weight: bolder;
+        }
+
+        #image1{
+            width: 400px;
+            position: absolute;
+            top: 130px;
+            right: 300px;
+            border-radius: 50px;
+            border: 2px solid #0048ae;
+
+        }
+
+        a:link{
+            color: black;
+        }
+
+        a:visited{
+            color: black;
+        }
+
+        #container2{
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 300px;
+            margin-top: 220px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around ;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            font-family: "Roboto Light", sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+
+        }
+        .ikone{
+            height: 100px;
+            width: 100px;
+            transition: 0.25s;
+        }
+
+        .ikone:hover{
+            height: 120px;
+            width: 120px;
+            transition: 0.2s;
+        }
+
+        #title2{
+            margin-top: 50px;
+            font-family: "Roboto Light", sans-serif;
+            font-weight: bolder;
+            margin-right: 40%;
+            margin-left: 40%;
+            font-size: 32px;
+        }
+        #idtext2{
+            font-family:"Roboto Light", sans-serif ;
+            margin-right: 20%;
+            margin-left: 20%;
+            text-align: center;
+        }
+
+        .box2{
+            height: 40px;
+            width: 40px;
+            background-color: #0048ae;
+        }
+        #container3{
+            margin-top: 50px;
+            margin-left: 30%;
+            margin-right: 30%;
+            width: 40%;
+            height: 150px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box2{
+            background-color: #0048ae;
+            border-radius: 30px 10px 30px 10px;
+            height: 100px;
+            width: 100px;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            align-items: center;
+            font-family: "Roboto Light", sans-serif;
+
+        }
+
+        #textContainer1{
+            margin-left: 30%;
+            margin-right: 30%;
+            width: 40%;
+            height: 150px;
+            display: flex;
+            justify-content: space-around;
+            font-family: "Roboto Light", sans-serif;
+            font-weight: bold;
+        }
+
+        #title3{
+            color: #0048ae;
+            font-size: 30px;
+            margin-left: 110px;
+            font-family: "Roboto Light", sans-serif;
+            font-weight: bolder;
+        }
+
+        .title3con{
+            width: 400px;
+            font-size: large;
+
+        }
+
+        #footer{
+            margin-top: 50px;
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-around;
+            font-family: "Roboto Light", sans-serif;
+            padding-bottom: 100px;
+        }
+
+        #iskustvaCon{
+            display: flex;
+            justify-content: space-around;
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        a:link{
+            color: inherit;
+            text-decoration: none;
+            text-underline: none;
+        }
+
+        #con1{
+            width: 40%;
+            margin-right: 30%;
+            margin-left: 30%;
+            height: auto;
+            display: flex;
+            border-radius: 30px;
+            flex-direction: row;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        #con2{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        #loginbutton{
+            padding: 10px;
+            border-radius: 5px;
+            border: 0px;
+            transition: 0.2s;
+        }
+
+        #loginbutton:hover{
+            background-color: #0048ae;
+            color: white;
+            transition: 0.1s;
+
+        }
+
+        #reg{
+            font-weight: bolder;
+        }
+
+        #reg{
+            cursor: help;
+        }
+
+    </style>
+    <title>YouthVibe - Početna</title>
+</head>
+<body>
+<img src="icon.png" alt="" id="slika">
+<div id="container">
+    <button class="button"><a href="about.html">Početna</a></button>
+    <button class="button"><a href="about.html">O nama</a></button>
+    <button class="button"><a href="prilike.html">Prilike</a></button>
+    <button class="button"><a href="/pregledajVijesti">Novosti</a></button>
+    <button class="button"><a href="">Prijava</a></button>
+    <button class="button1"><a href="/registerPage">Registracija</a></button>
+</div>
+
+<div id="con1">
+    <img style="height: 500px;" src="login.png" alt="">
+
+    <div id="con2">
+        <form action="/loginProcess" method="post">
+            <br><br><br>
+            <p style="font-weight: bolder">PRIJAVA</p>
+            <input type="text" placeholder="E-mail..." name="email">
+            <br>
+            <br>
+            <input type="password" placeholder="Password..." name="password">
+            <br> <br>
+            <button id="loginbutton" type="submit">Login</button>
+            <p>Nemate račun?</p>
+            <a id="reg" href="register.html">Registrujte se</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
