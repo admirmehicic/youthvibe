@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon.png">
+    <style>
+#slika{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+#container{
+    height: 50px;
+    float: right;
+    width: 850px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Kadwa  sans-serif;
+
+
+}
+
+.button {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Roboto Light", sans-serif;
+    transition: 0.1s;
+}
+
+.button:hover {
+    color: #0048ae;
+transition: 0.5s;
+}
+
+#onama{
+    font-family: "Roboto Light", sans-serif;
+}
+
+
+.button1 {
+        flex: 1;
+        margin: 0 10px;
+        background-color: #0048ae;
+        border: 0;
+        color: white;
+        letter-spacing: 1px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "Roboto Light", sans-serif;
+        float: right;
+        transition: 0.2s;
+    }
+
+.button1:hover{
+        background-color: white;
+        border: 1px solid #0048ae;
+        margin: -1px;
+       transition: 0.2s;
+    }
+
+    #textContainer{
+        margin-top: 120px;
+        font-size: 22px;
+        margin-left: 100px;
+        width: 700px;
+        color: black;
+
+    }
+
+    #title{
+        font-size: 50px;
+        color:  #0048ae;
+        font-family: "Roboto Light", sans-serif;
+        font-weight: bolder;
+    }
+
+    #image1{
+        width: 400px;
+        position: absolute;
+        top: 130px;
+        right: 300px;
+        border-radius: 50px;
+        border: 2px solid #0048ae;
+
+    }
+
+    #container2{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 300px;
+        margin-top: 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+    }
+    .box {
+        height: 200px;
+        width: 200px;
+        font-family: "Roboto Light", sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+
+    }
+    .ikone{
+        height: 100px;
+        width: 100px;
+        transition: 0.25s;
+    }
+
+    .ikone:hover{
+        height: 120px;
+        width: 120px;
+        transition: 0.2s;
+    }
+
+    #title2{
+        margin-top: 50px;
+        font-family: "Roboto Light", sans-serif;
+        font-weight: bolder;
+        margin-right: 40%;
+        margin-left: 40%;
+        font-size: 32px;
+    }
+    #idtext2{
+        font-family:"Roboto Light", sans-serif ;
+        margin-right: 20%;
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    .box2{
+        height: 40px;
+        width: 40px;
+        background-color: #0048ae;
+    }
+     #container3{
+         margin-top: 50px;
+         margin-left: 30%;
+         margin-right: 30%;
+         width: 40%;
+         height: 150px;
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .box2{
+         background-color: #0048ae;
+         border-radius: 30px 10px 30px 10px;
+         height: 100px;
+         width: 100px;
+         justify-content: center;
+         color: white;
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center;
+         align-items: center;
+         font-family: "Roboto Light", sans-serif;
+
+     }
+
+#textContainer1{
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+}
+
+#title3{
+    color: #0048ae;
+    font-size: 30px;
+    margin-left: 110px;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bolder;
+}
+
+.title3con{
+    width: 400px;
+    font-size: large;
+
+}
+
+#footer{
+    margin-top: 50px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto Light", sans-serif;
+    padding-bottom: 100px;
+}
+
+#iskustvaCon{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto Light", sans-serif;
+}
+
+a:link, a:visited {
+    color: black; /* or any color you prefer */
+    text-decoration: none; /* optional, if you want to remove underlines */
+}
+
+
+    </style>
+    <title>YouthVibe - Početna</title>
+</head>
+<body>
+<img src="icon.png" alt="" id="slika">
+<div id="container">
+
+    <button class="button" onclick="window.location.href='https://localhost:8080'">Početna</button>
+    <button class="button" onclick="window.location.href='about.html'" >O nama</button>
+    <button class="button" onclick="window.location.href='https://localhost:8080/pregledajPrilike'">Prilike</button>
+    <button class="button" onclick="window.location.href='https://localhost:8080/pregledaVijesti'">Novosti</button>
+    <button class="button" onclick="window.location.href='login.html'">Prijava</button>
+    <button class="button1" onclick="window.location.href='register.html'">Registracija</button>
+</div>
+
+
+
+<div id="textContainer">
+    <p id="title">Otkrivati znači napredovati</p>
+
+    <p id="onama">Naša vizija je podsticanje mladih u Bosni i Hercegovini koji će doprinijeti poboljšanju uslova života mladih kroz jačanje njihobih kapaciteta putem neformalnog obrazovanja i učešća u procesima donošenja odluka koje se odnose na mlade.
+        <br>Naša misija je osnažiti mlade kroz edukaciju i podsticati ih na kritičko razmišljanje, omogućavajući im učšešće u zagovaračkim i drugim kampanjama, čime doprinose uključivanju mladih u proces donošenja odluka koje se njih tiču. </p>
+    <img id="image1" src="image1.jpeg" alt="">
+</div>
+
+<div id="container2">
+    <p style="color:#0048ae; font-family: 'Roboto Light', sans-serif; font-weight: bolder; font-size: 25px; margin-top: 50px;">Naše usluge
+        <br>Nudimo dobre prilike</p>
+    <div class="box">
+        <p>Novosti</p>
+        <a href="news.html"><img class="ikone" src="novosti.png" alt="asda"></a>
+    </div>
+
+
+    <div class="box">
+        <p>Prilike</p>
+        <a href="prilike.html"><img class="ikone" src="prilike.png" alt=""></a>
+
+
+
+    </div>
+    <div class="box">
+        <p>Usavršavanje</p>
+        <a href="prilike.html"><img src="usavrsavanje.png" alt="" class="ikone"></a>
+    </div>
+</div>
+
+<p id="title2">Nudimo mnogo iskustva</p>
+<p id="idtext2">Neformalno obrazovanje ima ključnu ulogu u razvoju praktičnih vještina i znanja koja nisu uvijek dostupna kroz formalne obrazovne sisteme. Ono omogućava pojedincima da se prilagode brzim promjenama na tržištu rada i da se kontinuirano usavršavaju kroz cjeloživotno učenje.</p>
+
+<div id="container3">
+<div class="box2"><br> <p>10k+</p></div>
+<div class="box2"><br> <p>1k+</p></div>
+<div class="box2"><br><p>7+</p></div>
+
+</div>
+
+<div id="textContainer1">
+    <p>Mladih ljudi</p>
+    <p>Prilika</p>
+    <p>Godina rada</p>
+</div>
+
+
+<p id="title3">Šta mladi kažu o nama</p>
+<div id="iskustvaCon">
+<div class="title3con"><p>Marko iz Sarajeva učestvovao je u neformalnom obrazovnom programu koji se fokusirao na razvoj IT vještina. Preko ovog programa, Marko je stekao praktična znanja o programiranju i web dizajnu, što mu je omogućilo da se zaposli kao junior developer u lokalnoj IT firmi. "Ova edukacija mi je otvorila vrata ka karijeri koju nisam mogao ni zamisliti prije," kaže Marko.</p></div>
+<div class="title3con"><p>Ana iz Zagreba pohađala je radionice o preduzetništvu koje su bile dio neformalnog obrazovnog programa. Kroz praktične zadatke i mentorstvo, naučila je kako razviti poslovnu ideju i realizirati je na tržištu. Danas Ana vodi sopstveni mali biznis i kaže da su joj te radionice bile presudne za sticanje samopouzdanja i praktičnih znanja potrebnih za uspjeh.</p></div>
+<div class="title3con">Nikola iz Beograda je učestvovao u programu neformalnog obrazovanja koji se bavio razvojem socijalnih vještina i liderstva. Tokom nekoliko mjeseci, kroz interaktivne radionice i grupne projekte, Nikola je naučio kako efikasno komunicirati, raditi u timu i voditi projekte. "Ove vještine su mi neprocjenjive, ne samo u profesionalnom već i u privatnom životu," ističe Nikola.</div>
+</div>
+
+<div id="footer">
+    <img style="height: 200px; width: 200px" src="icon.png" alt="">
+    <div id="dodatno">
+        <p>
+            <strong>Dodatno - static </strong> <br>
+            Početna stranica<br>
+            Login <br>
+            Register <br>
+        </p>
+    </div>
+    <div id="istrazi">
+        <p>
+            <strong>Istraži</strong> <br>
+        O nama <br>
+        Novosti <br>
+        Konkursi <br></p>
+    </div>
+    <div id="kontakt">
+        <p>
+            <strong>Kontakt</strong> <br>
+            Email <br>
+            Adresa <br>
+            Broj telefona<br>
+        </p>
+    </div>
+</div>
+</body>
+</html>

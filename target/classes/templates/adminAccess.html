@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>YouthVibe - admin access</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="icon" href="icon.png">
+
+    <style>
+        #tabela{
+            font-family: "Roboto Light", sans-serif;
+            border: 1px solid black;
+            margin-left: 20%;
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+        border-collapse: collapse;
+        tr, td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 style="font-family: Roboto Light, sans-serif; margin-left: 20%;">Users List</h1>
+<table id="tabela">
+    <thead th:border="1">
+    <tr th:border="1">
+        <th>ID</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age </th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over the lists and display data in the table -->
+    <tr th:each="id, iterStat : ${IDlista}">
+        <td th:text="${IDlista[iterStat.index]}"></td>
+        <td th:text="${usernameLista[iterStat.index]}"></td>
+        <td th:text="${passwordList[iterStat.index]}"></td>
+        <td th:text="${emailList[iterStat.index]}"></td>
+        <td th:text="${firstnameList[iterStat.index]}"></td>
+        <td th:text="${lastnameList[iterStat.index]}"></td>
+        <td th:text="${ageList[iterStat.index]}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
